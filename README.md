@@ -1,2 +1,3 @@
 # InkSight_BookAnalytics
-SQL database for managing and analyzing book ratings. It includes tables for users, books, and ratings, automated ETL with triggers, and views for insights on top books and active users. Ideal for exploring data-driven insights in book ratings and user trends.
+InkSight Book Analytics is a comprehensive SQL-based project for managing, analyzing, and gaining insights from book ratings data. Designed for seamless data handling, automated updates, and real-time analytics, InkSight brings your book data to life, enabling you to dive deep into user preferences, top-rated books, and author popularity.
+
