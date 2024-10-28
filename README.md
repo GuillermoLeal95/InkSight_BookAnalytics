@@ -55,3 +55,16 @@ InkSight Book Analytics organizes and explores book, user, and rating data. The 
 + Validation steps handle non-numeric and missing values in `Age` and `Book_Rating`, ensuring that only high-quality data is stored and analyzed.
 
 ## Usage Instructions
++ **Run the ETL Process**
+   + Call the store procedure manually if needed:
+```bass
+CALL Update_Book_Ratings_Summary();
+```
++ **Explore the Data Marts**
+  + View the `Top_Rated_Books` or `Active_Users` views for insights.
+  + Example:
+```bass
+SELECT * FROM Top_Rated_Books;
+```
++ **Inspect the Materialized View:**
+  + Query `Materialized_Top_Rated_Books` for efficient access to popular books.
