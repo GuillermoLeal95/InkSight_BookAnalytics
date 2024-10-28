@@ -12,15 +12,27 @@ InkSight Book Analytics organizes and explores book, user, and rating data. The 
 + **Performance Optimization:** Indexes and materialized views improve query speed and efficiency, especially when working with large datasets.
 
 ## Project Setup
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
    git clone https://github.com/GuillermoLeal95/InkSight_BookAnalytics
 ```
-2. Open the SQL Script in MySQL Workbench
-+ Load InkSight_Book_Analytics.sql into MySQL Workbench.
-+ Download files already uploaded in github (Book, Ratings, Users)
+2. **Open the SQL Script in MySQL Workbench:**
++ Load `InkSight_Book_Analytics.sql` into MySQL Workbench.
 
-3. Run the Script
+3. **Download Dataset Files:**
++ Download the `Books.csv`, `Ratings.csv`, and `Users.csv` files from the GitHub repository.
++ Place these files in the MySQL server’s designated **uploads** folder. By default, this folder is located at:
+  `C:\ProgramData\MySQL\MySQL Server 8.4\Uploads`
+
+4. **Configure the MySQL Server to Allow File Uploads (If Not Already Set):**
++ Open MySQL Workbench and run the following command to confirm the server’s file upload directory:
+```bash
+   SHOW VARIABLES LIKE 'secure_file_priv';
+```
++ If `secure_file_priv` shows a path like `C:\ProgramData\MySQL\MySQL Server 8.4\Uploads`, this is the correct upload directory. Move the `.csv` files here.
+
+5. **Run the Script**
++ Execute the SQL script in MySQL Workbench to create tables, load data, and set up the database structure.
 
 ## Database Structure
 ### Core Tables
